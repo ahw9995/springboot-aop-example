@@ -47,6 +47,8 @@ dependencies {
     // mariaDB
     runtime('org.mariadb.jdbc:mariadb-java-client:2.2.3')
 
+    // slf4j
+    compile('org.slf4j:slf4j-api:1.7.25')
 }
 
 def queryDslOutput = file("src/main/generated")

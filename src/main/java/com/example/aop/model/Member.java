@@ -36,6 +36,6 @@ public class Member {
     private Date createdDate;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "member_id")
+    @JoinColumn(name = "member_seq")
     private List<MemberLoginHistory> memberLoginHistories;
 }
